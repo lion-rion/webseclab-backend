@@ -1,0 +1,81 @@
+
+.code-toolbar pre[class*=language-] {
+  padding-top: 38px;
+  position: relative
+}
+
+.code-toolbar pre[class*=language-]::before {
+  display: block;
+  border-radius: 2px;
+  color: #fff;
+  font-family: aktiv-grotesk, sans-serif;
+  font-size: 1.0rem;
+  font-weight: 300;
+  left: 40px;
+  left: 8px;
+  line-height: 1;
+  padding: 4px 8px 3px;
+  position: absolute;
+  text-shadow: none;
+  top: 8px
+}
+
+.code-toolbar pre[class*=language-c]::before {
+  background: #30629e;
+  content: "CentOS"
+}
+
+.code-toolbar pre[class*=language-js]::before {
+  background: #e5bd13;
+  content: "JavaScript"
+}
+
+.code-toolbar pre[class*=language-css]::before {
+  background: #38a7e5;
+  content: "CSS"
+}
+
+.code-toolbar pre[class*=language-scss]::before {
+  background: #c76494;
+  content: "SCSS"
+}
+
+.code-toolbar pre[class*=language-ejs]::before {
+  background: #90a93a;
+  content: "EJS"
+}
+
+.code-toolbar pre[class*=language-markup]::before {
+  background: #ef851b;
+  content: "HTML"
+}
+
+.code-toolbar pre[class*=language-php]::before {
+  background: #6b65e7;
+  content: "PHP"
+}
+
+.code-toolbar pre[class*=git]::before {
+  background: #f05033;
+  content: "Git"
+}
+
+.code-toolbar pre[class*=ts]::before {
+  background: #3178c6;
+  content: "TypeScript"
+}
+
+.code-toolbar pre[class*=bash]::before {
+  background: #3c4548;
+  content: "Bash"
+}
+
+.code-toolbar pre[class*=powershell]::before {
+  background: #1f77c4;
+  content: "PowerShell"
+}
+
+.code-toolbar pre[class*=json]::before {
+  background: #777;
+  content: "JSON"
+}
