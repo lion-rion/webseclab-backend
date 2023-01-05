@@ -1,0 +1,9 @@
+.study-contents{
+    margin: 0 10px;
+}
+
+.study-contents p {
+    font-size: 14px;
+    font-weight: 400;
+    color: #2b546a;
+}

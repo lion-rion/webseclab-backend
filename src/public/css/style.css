@@ -1,0 +1,97 @@
+/**/
+
+html {
+    height: 100%;
+}
+
+body{
+    font-family: Lato, "Hiragino Maru Gothic Pro", "Meiryo UI", Meiryo, "MS PGothic", sans-serif;
+    background-color: #e9edf1;
+    height: 100%;
+
+    /*スクロールを禁止*/
+    overflow: hidden;
+}
+
+/*iframe setting */
+
+.study-frame-top{
+    border-radius: 10px 10px 0 0;
+    display: flex;
+    background-color: #f5f5f5;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.study-frame-top p{
+    font-weight: 400;
+    line-height: 20px;
+    font-size: 0.75rem;
+}
+
+
+.study-frame-wrap-right{
+    padding: 8px 8px 0px 4px;
+}
+
+.study-frame-wrap-left{
+    padding: 8px 4px 0px 8px;
+}
+
+.study-frame-wrap iframe { 
+    width:100%; height:80vh;
+    background: white;
+}
+
+.icon-img{
+    margin: 10px;
+    width: 22px;
+    height: 22px;
+}
+
+.study-pp{
+    background-color: rgb(8, 79, 150);
+}
+
+/*iframe end*/
+
+
+
+/* header end */
+
+.main-icon{
+    height: 50px;
+}
+
+/* study contents */
+
+.study-scrool{
+    background-color: white;
+    height: 100%;
+    overflow-y: auto;
+    max-height: 80vh;
+    padding: 10px;
+}
+
+
+
+/* header */
+
+header{
+    width: 100%;
+    height: 50px;
+    background-color: #fff;
+    box-shadow: 0 1px 3px rgb(160 166 179 / 30%);
+}
+
+/* header end */
+
+/*study-footer*/
+
+.study-form-footer{
+    width: 100%;
+    height: 65px;
+    background-color: #fff;
+    border: 1px solid #e5e5e5;
+    box-shadow: 0 1px 3px rgb(160 166 179 / 100%);
+}
+
