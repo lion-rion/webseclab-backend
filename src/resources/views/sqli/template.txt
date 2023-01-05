@@ -1,0 +1,7 @@
+<!--ソースコードを記載する際に使用-->
+
+<div class="code-toolbar">
+    <pre class="line-numbers language-scss" tabindex="0"><code class="language-PHP">&lt;?php echo echo echo echo echo &quot;Hello World&quot; ?&gt;</code></pre>
+</div>
+
+<!---->
