@@ -5,17 +5,47 @@
 @section('content')
 <div class="main">
     <div class="course-left-content-wrap">
-        <div class="courses-wrap">
-            <div class="course_container">
-                <div class=" bg-white">
-                    <div class="course_exp flex">
-                        <img class="course-img" src="https://static.vecteezy.com/system/resources/previews/006/843/150/original/xss-attack-black-glyph-icon-cross-site-scripting-software-attack-client-side-code-injection-malware-computer-damage-silhouette-symbol-on-white-space-isolated-illustration-vector.jpg" alt="">
-                        <h3 class="course_exp_title">Cross Site Scripting (XSS)</h3>
+        <div class="course_container">
+            <div class="course-wrap flex">
+                <img src="/img/icon.png" alt="">
+                <p>データベースに侵入せよ！入門SQLインジェクション</p>
+            </div>
+        </div>
+        <div class="course_container">
+            <div class="course-wrap flex">
+                <img src="/img/icon.png" alt="">
+                <p>ぺねらぼについて</p>
+            </div>
+        </div>
+
+
+        <div class="accordion">
+            <div class="accordion-container">
+                <div class="accordion-item course_container">
+                    <div class="accordion-title bo-bo js-accordion-title">
+                        <div class="course-wrap flex">
+                            <img src="/img/icon.png" alt="">
+                            <p>ぺねらぼについて</p>
+                        </div>
+                    </div>
+                    <!--/.accordion-title-->
+                    <div class="accordion-content bo-bo">
+                        <div class="bo-bo flex justify-between">
+                            <p>コンテンツが入ります。</p>
+                            <div class="rocked-message">チュートリアルをクリアで開放</div>
+                        </div>
+                        <div class="bo-bo"><p>コンテンツが入ります。</p></div>
+                        <div class="bo-bo"><p>コンテンツが入ります。</p></div>
+                        <div class="bo-bo"><p>コンテンツが入ります。</p></div>  
+                    </div>
+                    <div class="accordion-content">
+                        
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    
     <div class="course-right-content-wrap">
         <div class="course-right-content">hello</div>
     </div>

@@ -39,3 +39,21 @@
         </div>
 
 <!---->
+
+
+
+@guest <!--ログインしていなかったら表示-->
+                <li><a href="{{ url('/logout') }}">ログイン</a></li>
+                <li><a href="{{ url('/register') }}">新規登録</a></li>
+                @endguest
+                @auth <!--ログインしていたら表示-->
+                <li><form method="POST" action="{{ route('logout') }}">
+                    @csrf
+                
+                    <x-dropdown-link :href="route('logout')"
+                            onclick="event.preventDefault();
+                                        this.closest('form').submit();">
+                        {{ __('ログアウト') }}
+                    </x-dropdown-link>
+                </form></li>
+                @endauth

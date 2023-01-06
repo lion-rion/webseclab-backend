@@ -3,9 +3,9 @@
         <div class="flex">
             <a href="/"><img class="main-icon" src="/img/icon.png" alt=""></a>
             <div class="global-menu gnavi flex">
-                <li><a href="">コース一覧</a></li>
-                <li><a href="">ぺねらぼについて</a></li>
-                <li><a href="">お問い合わせ</a></li>
+                <li><a href="{{ route('courses')}}">コース一覧</a></li>
+                <li><a href="{{route('help')}}">ぺねらぼについて</a></li>
+                <li><a href="{{route('contact')}}">お問い合わせ</a></li>
             </div>
         </div>
         <div class="flex ">
