@@ -22,12 +22,11 @@
     <!-- Styles -->
     
 </head>
+@include('parts.header')
 <body>
-    @include('parts.header')
     <div class="main">
         @yield('content')
     </div>
-    @include('parts.footer')
-
 </body>
+@include('parts.footer')
 </html>
