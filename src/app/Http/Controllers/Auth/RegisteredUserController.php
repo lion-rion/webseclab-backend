@@ -12,6 +12,7 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Validation\Rules;
 use Illuminate\View\View;
+use App\Models\Check;
 
 class RegisteredUserController extends Controller
 {
@@ -28,6 +29,9 @@ class RegisteredUserController extends Controller
      *
      * @throws \Illuminate\Validation\ValidationException
      */
+
+
+    
     public function store(Request $request): RedirectResponse
     {
         $request->validate([
@@ -36,8 +40,11 @@ class RegisteredUserController extends Controller
             'password' => ['required', 'confirmed', Rules\Password::defaults()],
         ]);
 
+        $check = Check::create();
+
         $user = User::create([
             'name' => $request->name,
+            'checks_id' => $check->id,
             'email' => $request->email,
             'password' => Hash::make($request->password),
         ]);
