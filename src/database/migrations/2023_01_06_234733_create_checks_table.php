@@ -16,8 +16,12 @@ return new class extends Migration
         Schema::create('checks', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
-            $table->boolean('stage1')->default(true);
+            $table->boolean('tutorial1')->default(false);
+            $table->boolean('stage1')->default(false);
             $table->boolean('stage2')->default(false);
+            $table->boolean('stage3')->default(false);
+            $table->boolean('stage4')->default(false);
+            $table->boolean('stage5')->default(false);
         });
     }
 
