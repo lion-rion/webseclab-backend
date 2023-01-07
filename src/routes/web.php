@@ -3,6 +3,7 @@
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\StageController;
+use Illuminate\Http\Request;
 
 
 /*
@@ -55,6 +56,6 @@ Route::get('/courses/{course}/{stage}', [StageController::class, 'detail'])->mid
 
 //Route::get('/courses/{course}/{stage}', [CourseController::class, 'detail'])->middleware(['auth'])->middleware('clear');
 
-
+Route::post('/courses/{course}/{stage}/check', [StageController::class, 'check']);
 
 require __DIR__.'/auth.php';
