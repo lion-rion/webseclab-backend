@@ -84,3 +84,17 @@
         <p>ステージz</p>
     </a>
 </div>
+
+
+<div class="course_container">
+    <div class="course-wrap flex">
+        <img src="/img/icon.png" alt="">
+        <p>データベースに侵入せよ！入門SQLインジェクション</p>
+    </div>
+</div>
+<div class="course_container">
+    <div class="course-wrap flex">
+        <img src="/img/icon.png" alt="">
+        <p>ぺねらぼについて</p>
+    </div>
+</div>

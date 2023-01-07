@@ -24,7 +24,9 @@
 </head>
 <body>
     @include('parts.header')
-    @yield('content')
+    <div class="main">
+        @yield('content')
+    </div>
     @include('parts.footer')
 
 </body>
