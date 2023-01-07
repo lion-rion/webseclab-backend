@@ -2,6 +2,8 @@
 
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\StageController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -47,6 +49,11 @@ Route::get('/contact', function () {
 Route::get('/courses/sql', function () {
     return view('courses.sqli.index');
 });
+
+
+Route::get('/courses/{course}/{stage}', [StageController::class, 'detail'])->middleware(['auth']);
+
+//Route::get('/courses/{course}/{stage}', [CourseController::class, 'detail'])->middleware(['auth'])->middleware('clear');
 
 
 
