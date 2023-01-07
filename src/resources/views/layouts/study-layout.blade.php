@@ -8,8 +8,9 @@
         <link rel="stylesheet" href="/css/prism-plugin.css">
         <link rel="stylesheet" href="/css/prism.css">
         <script src="/js/prism.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 
-        <title>Laravel</title>
+        <title>@yield('title')</title>
 
         <!-- Fonts -->
         <link href="https://fonts.bunny.net/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
@@ -21,7 +22,27 @@
     </head>
     @include('parts.study-header')
     <body>
-        @yield('content')
+        <div class="flex">
+            <div style="width: 60%;">
+                <div class="study-frame-wrap-left">
+                    <div class="study-frame-top">
+                        <img class="icon-img" src="/img/study.png" alt="">
+                        <p>手順</p>
+                        <!--<div class="ml-12  study-pp">
+                            <p class="text-gray-300">まずは確認</p>
+                        </div>-->
+                    </div>
+                    <div class="study-scrool ">
+                        <div class="study-contents">
+                            @yield('left-content')
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div style="width: 40%;">
+                @yield('right-content')
+            </div>
+        </div>
     </body>
     @include('parts.study-footer')
 </html>
