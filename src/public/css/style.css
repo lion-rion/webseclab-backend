@@ -4,6 +4,11 @@ html {
     height: 100%;
 }
 
+i{
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
 body{
     font-family: Lato, "Hiragino Maru Gothic Pro", "Meiryo UI", Meiryo, "MS PGothic", sans-serif;
     background-color: #f7f9ff;
@@ -56,6 +61,10 @@ body{
 
 
 /* header end */
+
+.top-img{
+    margin-top: 30px;
+}
 
 .main-icon{
     height: 50px;
@@ -152,8 +161,6 @@ footer p {
 .main{
     width: 60%;
     margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
 }
 
 .course-right-content-wrap{
@@ -308,3 +315,4 @@ footer p {
     margin: 7px;
     padding: 7px;
 }
+

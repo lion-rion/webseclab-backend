@@ -57,3 +57,30 @@
                     </x-dropdown-link>
                 </form></li>
                 @endauth
+
+<!---->
+
+
+<!--ステージクリア-->
+
+<div class="accordion-content bo-bo">
+    <div class="bo-bo flex justify-between">
+        <p>ステージ1</p>
+        <div class="rocked-message"><i class="fa-solid fa-lock"></i>チュートリアルをクリアで開放</div>
+    </div>
+    <div class="bo-bo flex justify-between">
+        <p>ステージ2</p>
+        <div class="rocked-message"><i class="fa-solid fa-lock"></i>ステージ1をクリアで開放</div>
+    </div>
+    <div class="bo-bo flex justify-between">
+        <p>ステージ3</p>
+        <div class="rocked-message"><i class="fa-solid fa-lock"></i>ステージ2をクリアで開放</div>
+    </div>
+    <div class="bo-bo flex justify-between">
+        <p>ステージx</p>
+        <div class="rocked-message"><i class="fa-solid fa-check"></i></div>
+    </div>
+    <a href="/" class="bo-bo flex justify-between">
+        <p>ステージz</p>
+    </a>
+</div>
