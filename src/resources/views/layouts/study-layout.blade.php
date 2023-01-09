@@ -22,25 +22,27 @@
     </head>
     @include('parts.study-header')
     <body>
-        <div class="flex">
-            <div style="width: 60%;">
-                <div class="study-frame-wrap-left">
-                    <div class="study-frame-top">
-                        <img class="icon-img" src="/img/study.png" alt="">
-                        <p>手順</p>
-                        <!--<div class="ml-12  study-pp">
-                            <p class="text-gray-300">まずは確認</p>
-                        </div>-->
-                    </div>
-                    <div class="study-scrool ">
-                        <div class="study-contents">
-                            @yield('left-content')
+        <div class="study-main">
+            <div class="flex">
+                <div style="width: 60%;">
+                    <div class="study-frame-wrap-left">
+                        <div class="study-frame-top">
+                            <img class="icon-img" src="/img/study.png" alt="">
+                            <p>手順</p>
+                            <!--<div class="ml-12  study-pp">
+                                <p class="text-gray-300">まずは確認</p>
+                            </div>-->
+                        </div>
+                        <div class="study-scrool ">
+                            <div class="study-contents">
+                                @yield('left-content')
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div style="width: 40%;">
-                @yield('right-content')
+                <div style="width: 40%;">
+                    @yield('right-content')
+                </div>
             </div>
         </div>
     </body>
