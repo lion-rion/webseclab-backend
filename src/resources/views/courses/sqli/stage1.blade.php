@@ -2,6 +2,8 @@
 
 @section('title', 'SQL')
 
+@section('mission', 'SQLに侵入だ')
+
 @section('left-content')
 
 
