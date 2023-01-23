@@ -57,5 +57,5 @@
             </div>
         </div>
     </body>
-    @include('parts.study-footer')
+    {{--@include('parts.study-footer')--}}
 </html>

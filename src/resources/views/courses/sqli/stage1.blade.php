@@ -79,4 +79,5 @@
 
 @section('right-content')
     @include('courses.sqli.iframe',['url'=>'http://127.0.0.1:20001'])
+    @include('parts.ajax')
 @endsection
