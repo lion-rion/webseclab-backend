@@ -28,10 +28,11 @@ $("button").click(function() {
                     alert("正解です！");
                 },1000);
             } else{
-                setTimeout(function(){
-                    $("#overlay").fadeOut(0);
-                    alert("正解です！");
+                //#overlayの中身を置換
+                setTimeout(function(){         
+                    $(".cv-spinner").replaceWith('<div class="clear-menu-wrap"><div class="clear-img-wrap"><img class="clear-img" src="/img/header.png" alt=""></div><div class="flex clear-menu-button"><div class="button008"><a href="#" class="btn btn--orange">PUSH</a></div><div class="button008"><a href="#" class="button008">PUSH</a></div></div></div>');
                 },1000);
+                
             }
             setTimeout(function(){
                 

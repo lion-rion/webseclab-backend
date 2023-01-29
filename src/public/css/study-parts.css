@@ -110,7 +110,12 @@ body{
   }
 
 /*吹き出しの右側バージョン */
-
+.clear-menu-button{
+  justify-content: space-between;
+  width: 50%;
+  margin: 0 auto;
+  padding: 20px;
+}
 
 
 .balloon-right{
@@ -277,3 +282,63 @@ body{
 }
 
 /*終了*/
+
+
+/*クリア時に表示される要素*/
+/* 
+.clear-img{
+  z-index: 200;
+  position: absolute;
+  top: 300px;
+  right: 100px;
+  align-items: center;
+  margin: 0 auto;
+} */
+
+.clear-menu-wrap{
+  width: 60%;
+  position: absolute;
+  top : 200px;
+  left: 100px;
+  align-items: center;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+
+.button008 a {
+  cursor: pointer;
+  background: #eee;
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 240px;
+  padding: 10px 25px;
+  color: #313131;
+  font-weight: 500;
+  z-index: 0;
+}
+
+.button008 a:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 0;
+  display: block;
+  background: #6bb6ff;
+  transition: .3s;
+  left: 0;
+}
+
+.button008 a:hover {
+  color: #FFF;
+}
+
+.button008 a:hover:before {
+  width: 100%;
+  z-index: -1;
+}

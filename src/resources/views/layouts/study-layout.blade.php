@@ -28,6 +28,9 @@
             <span class="spinner"></span>
         </div>
     </div>
+    <div id="clear-modal">
+        <div class=""></div>
+    </div>
     <header>
         <div class="flex">
             <div>
