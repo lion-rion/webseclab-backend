@@ -18,7 +18,6 @@ class StageController extends Controller
 
     public function check($course, $stage, Request $request){
         //ddd($course, $stage, $request->flag);
-
         //ユーザーのチェックテーブルを取得
         $judge = Check::find(\Auth::user()->checks_id);
 
@@ -39,7 +38,8 @@ class StageController extends Controller
 
         if(isset($check[$course][$stage][$request->flag])){
             //存在していた場合はクリアなので、1に設定する
-            $judge->$course."_".$stage = 1;
+            $column = $course . "_" . $stage;
+            $judge->$column = 1;
             $judge->save();
             echo json_encode($check[$course][$stage][$request->flag]);
         } else{
