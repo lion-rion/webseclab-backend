@@ -15,18 +15,35 @@ class StageController extends Controller
         //ddd($course, $stage);
         return view("courses.{$course}.{$stage}");
     }
+
     public function check($course, $stage, Request $request){
-        //jsonで返す
+        //ddd($course, $stage, $request->flag);
+
+        //ユーザーのチェックテーブルを取得
+        $judge = Check::find(\Auth::user()->checks_id);
+
+        //jsonで返す設定
         header("Content-type: application/json; charset=UTF-8");
-        if($course == 'sqli' && $stage == 'stage1' && $request->flag == 'test1') {
-            $judge = Check::find(\Auth::user()->checks_id);
-            //成功したらstageを1にする
-            $judge->stage1 = 1;
+
+        //連想配列を作成
+        $check = array(
+            "sqli" => array(
+                "stage1" => array("test1" => ["https://localhost:8080"]),
+                "stage2"=>  array("test2" => ["https://localhost:8080"]),
+            ),
+            "xss" => array(
+                "stage1" => array("test1" => ["https://localhost:8080"]),
+                "stage2"=>  array("test2" => ["https://localhost:8080"]),
+            ),
+        );
+
+        if(isset($check[$course][$stage][$request->flag])){
+            //存在していた場合はクリアなので、1に設定する
+            $judge->$course."_".$stage = 1;
             $judge->save();
-            echo json_encode("true");
+            echo json_encode($check[$course][$stage][$request->flag]);
         } else{
             echo json_encode("false");
         }
-        
     }
 }
