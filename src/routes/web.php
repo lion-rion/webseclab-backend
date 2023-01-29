@@ -3,6 +3,7 @@
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\StageController;
+use App\Http\Controllers\CourseController;
 use Illuminate\Http\Request;
 
 
@@ -17,13 +18,6 @@ use Illuminate\Http\Request;
 |
 */
 
-Route::get('/', function () {
-    return view('index');
-});
-
-
-
-
 
 // Route::middleware('auth')->group(function () {
 //     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
@@ -31,11 +25,11 @@ Route::get('/', function () {
 //     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 // });
 
-// header url
+Route::get('/', function () {
+    return view('index');
+});
 
-Route::get('/courses', function () {
-    return view('courses.index');
-})->name('courses');
+Route::get('/courses', [CourseController::class, 'index'])->name('courses');
 
 Route::get('/help', function () {
     return view('help.index');
@@ -46,12 +40,6 @@ Route::get('/contact', function () {
 })->name('contact');
 
 //コース設定
-
-Route::get('/courses/sql', function () {
-    return view('courses.sqli.index');
-});
-
-
 Route::get('/courses/{course}/{stage}', [StageController::class, 'detail'])->middleware(['auth']);
 
 //Route::get('/courses/{course}/{stage}', [CourseController::class, 'detail'])->middleware(['auth'])->middleware('clear');
